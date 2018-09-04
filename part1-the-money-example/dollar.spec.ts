@@ -1,5 +1,5 @@
 import { Dollar } from './dollar';
-import { expect } from 'chai';
+import { expect, assert } from 'chai';
 import 'mocha';
 
 describe('dollar class', () => {
@@ -15,5 +15,13 @@ describe('dollar class', () => {
     const product: Dollar = five.times(3);
     expect(product.amount).to.equal(15);
   });
+
+  it('should equal new Dollar(5)', () => {
+    expect(new Dollar(5).equals(new Dollar(5))).to.equal(true);
+  })
+
+  it('should not equal new Dollar(6)', () => {
+    expect(new Dollar(5).equals(new Dollar(6))).to.equal(false);
+  })
 
 });
