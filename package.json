@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register -r ignore-styles -r jsdom-global/register **/*.spec.ts"
+    "test": "mocha -r ts-node/register **/*.spec.ts"
   },
   "keywords": [],
   "author": "",

@@ -1,8 +1,8 @@
 import { Dollar } from './dollar';
-import { expect, assert } from 'chai';
+import { expect } from 'chai';
 import 'mocha';
 
-describe('dollar class', () => {
+describe('Dollar class', () => {
 
   it('should equal 10', () => { // use to.deep.equal to compare objects
     const five: Dollar = new Dollar(5);
