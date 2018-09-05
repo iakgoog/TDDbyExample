@@ -7,6 +7,6 @@ export class Money {
 
   public equals(object: any): boolean {
     const money = <Money> object;
-    return this.amount === money.amount;
+    return this.amount === money.amount && typeof this === typeof money;
   }
 }

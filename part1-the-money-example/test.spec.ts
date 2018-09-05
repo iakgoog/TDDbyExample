@@ -49,4 +49,8 @@ describe('Test Equality', () => {
     expect(new Franc(5).equals(new Franc(6))).to.equal(false);
   })
 
+  it('new Franc(5) should equal new Dollar(5)', () => {
+    expect(new Franc(5).equals(new Dollar(5))).to.equal(true);
+  })
+
 });
