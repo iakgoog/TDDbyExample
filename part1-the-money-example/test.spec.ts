@@ -61,3 +61,15 @@ describe('Test Equality', () => {
   })
 
 });
+
+describe('Test Currency', () => {
+
+  it('USD should equal Money.dollar(1).currency()', () => {
+    expect('USD').to.equal(Money.dollar(1).currency());
+  })
+
+  it('CHF should equal Money.dollar(1).currency()', () => {
+    expect('CHF').to.equal(Money.franc(1).currency());
+  })
+
+});
